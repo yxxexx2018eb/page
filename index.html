@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+    <meta charset="utf-8" />
+    <title>不欢迎访问不是江西服装学院官方网站</title>
+    <style type="text/css">
+        a {
+            color:black;
+        }
+            a:hover {
+                color: forestgreen;
+            }
+        /* 鼠标移du动到链接上 */
+        .a-1 {
+            color:white;
+        }
+
+    </style>
+</head>
+<body id="mybody" style="background-color:dimgrey">
+
+    <script>
+        var a = 100;
+        var b = 100;
+        var g = 100;
+        var mya = 0;
+        var myb = 0;
+        var myg = 0;
+        var myVar = setInterval(function () { myTimer() }, 1);
+        function myTimer() {
+            if ((mya != a) && (myb != b) && (myg != g)) {
+                if (a > mya) {
+                    mya = mya + 1;
+                    // document.getElementById("m1").innerText = a+" "+ mya;
+                }
+                else mya--;
+                if (b > myb) {
+                    myb = myb + 1;
+                    // document.getElementById("m2").innerText =b+" "+ myb;
+                }
+                else myb--;
+                if (g > myg) {
+                    myg = myg + 1;
+                    //document.getElementById("m3").innerText =g+" "+ myg;
+                }
+                else myg--;
+                //变化颜色
+                document.getElementById("mybody").style.backgroundColor = "rgb(" + mya + "," + myb + ", " + myg + ")";
+            }
+            else {
+                der();
+            }
+
+        }
+        function der() {
+            a = Math.floor(Math.random() * 256);
+            b = Math.floor(Math.random() * 256);
+            g = Math.floor(Math.random() * 256);
+        }
+    </script>
+
+    <div class="bg-white">
+        <div class="container">
+            <div class="row" style="height:140px">
+                <div class="col-md-8 my-auto">
+                    <img src="img/logo.png" />
+                </div>
+                <div class="col-md-4 p-4 my-auto">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><img src="img/fdj.png" /></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="        background-color: #125F69">
+        <div class="container text-white">
+            <nav class="navbar navbar-expand-lg navbar-light a-1">
+
+                <a class="navbar-brand text-white" href="#" style="font-size:medium">学校首页</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav justify-content-center">
+
+                       
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle a-1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                学校概况
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">内容1</a>
+                                <a class="dropdown-item">内容2</a>
+                                <a class="dropdown-item">内容3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle a-1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                组织机构
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">内容1</a>
+                                <a class="dropdown-item">内容2</a>
+                                <a class="dropdown-item">内容3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle a-1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                教育教学
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">内容1</a>
+                                <a class="dropdown-item">内容2</a>
+                                <a class="dropdown-item">内容3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle a-1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                科学研究
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">内容1</a>
+                                <a class="dropdown-item">内容2</a>
+                                <a class="dropdown-item">内容3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle a-1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                招生就业
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">内容1</a>
+                                <a class="dropdown-item">内容2</a>
+                                <a class="dropdown-item">内容3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle a-1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                人事人才
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">内容1</a>
+                                <a class="dropdown-item">内容2</a>
+                                <a class="dropdown-item">内容3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle a-1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                信息公开
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">内容1</a>
+                                <a class="dropdown-item">内容2</a>
+                                <a class="dropdown-item">内容3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle a-1" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                创新创业
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item">内容1</a>
+                                <a class="dropdown-item">内容2</a>
+                                <a class="dropdown-item">内容3</a>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active ">
+                        <img src="img/zhidao.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/15.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner00.jpg" class="d-block w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container ">
+        <div class="row bg-white pt-5 px-3 pb-0">
+            <div class="col-sm-4 ">
+                <h4 class=""><strong>图片新闻</strong></h4>
+
+                <div class="fakeimg">
+                    <img class="img-thumbnail border-0" src="img/IMG_31231.jpg" />
+                </div>
+                <p class="text-center">这里是图片新闻</p>
+
+            </div>
+            <div class="col-sm-4">
+                <h4><strong>校园风光</strong></h4>
+                <div class="fakeimg">
+                    <img class="img-thumbnail border-0" src="img/4493F6D316D7DC67A05B2735EB4_476503C9_A67C.jpg" />
+                </div>
+                <p class="text-center">这里是校园风光</p>
+
+            </div>
+            <div class="col-sm-4">
+                <h4><strong>T台秀场</strong></h4>
+                <div class="fakeimg">
+                    <img class="img-thumbnail border-0" src="img/9B2418F00125AF8EFEDF2CE9D04_5DBA1310_9AF0.jpg" />
+                </div>
+                <p class="text-center">这里是T台秀场</p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container ">
+        <div class="row bg-white">
+            <div class="col-4  p-4">
+                <div style="        background-color: #F5F5F5" class="pb-1 mb-4">
+                    <hr>
+                    <h5><strong>学校要闻  丨  院部动态</strong></h5>
+                </div>
+
+                <div>
+                    <ul style="list-style: none;font-size:small" class="px-2">
+                        <li style="margin-bottom:20px">
+                            ><a href="#">服装设计学院召开教师线上座谈会</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">人文学院组织学习“省委书记刘奇同志在江西</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">商学院组织师生学习省委书记刘奇同志在江西</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">服装工程学院组织观看2020届高校毕业生就业</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">艺术设计学院组织观看爱国主义电影</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">服装工程学院开展“6.26国际禁毒日”系列宣</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-4  p-4">
+                <div style="        background-color: #F5F5F5" class="pb-1 mb-4">
+                    <hr>
+                    <h5><strong>媒体关注  丨  通知公告</strong></h5>
+                </div>
+
+                <div>
+                    <ul style="list-style: none;font-size:small" class="px-2">
+                        <li style="margin-bottom:20px">
+                            ><a href="#">江西日报·江西新闻客户端：炫！酷！江西学子…</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">江西思政：疫情防控中所体现的中国制度优</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">中国网：疫情防控中的中国制度优势——江西</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">江西新闻客户端·江西日报：江西服装学院师生…</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">江西教育网：江西服装学院组织学习省长易炼</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">纺织服装周刊：江西服装学院服装工程学院精</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-4  p-4">
+                <div style="        background-color: #F5F5F5" class="pb-1 mb-4">
+                    <hr>
+                    <h5><strong>博雅讲坛  丨  影像江服</strong></h5>
+                </div>
+
+                <div>
+                    <ul style="list-style: none;font-size:small" class="px-2">
+                        <li style="margin-bottom:20px">
+                            ><a href="#">博雅讲坛||南昌航空大学艺术与设计学院副院长…</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">博雅讲坛||中国时装设计“金顶奖”获得者祁刚…</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">博雅讲坛||江西财经大学丁梁博士应邀来校讲学</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">博雅讲坛||法国KRISTINA POPOUITCH亚洲区设</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">博雅讲坛||利郎公司副总裁胡诚初先生应邀来校…</a>
+                        </li>
+                        <li style="margin-bottom:20px">
+                            ><a href="#">博雅讲坛||浙江理工大学冯荟博士来我校讲学</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container bg-white">
+        <div class="mx-4"> <h4><strong>快速通道</strong></h4></div>
+        <div class="px-5">
+            <div class="row text-center">
+                <div class="col-2 my-4">
+                    <img src="img/kstd1.png" />
+                    <br><br>
+                    <h6>教育部</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd2.png" />
+                    <br><br>
+                    <h6>江西省教育厅</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd3.png" />
+                    <br><br>
+                    <h6>团书馆</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd4.png" />
+                    <br><br>
+                    <h6>服装博物馆</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd5.png" />
+                    <br><br>
+                    <h6>教学网</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd6.png" />
+                    <br><br>
+                    <h6>党建平台</h6>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2 my-4">
+                    <img src="img/kstd7.png" />
+                    <br><br>
+                    <h6>信息门户</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd8.png" />
+                    <br><br>
+                    <h6>网上缴费</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd9.png" />
+                    <br><br>
+                    <h6>招生信息网</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd10.png" />
+                    <br><br>
+                    <h6>官方微博微信</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd11.png" />
+                    <br><br>
+                    <h6>校内电话查询</h6>
+                </div>
+                <div class="col-2 my-4">
+                    <img src="img/kstd12.png" />
+                    <br><br>
+                    <h6>校长书记信箱</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-dark mb-5">
+        <div class="text-center text-white p-4">
+            <p>学校地址： 江西省南昌市向塘经济开发区丽湖中大道103号   邮编：xxxxxx  站长统计</p>
+            <p>招生传真：xxxx-xxxxxxxx  国标代码： xxxxx © Copyright 2015-2018.Powered by  江西服装学院赣ICP备xxxxxxxxx号-1</p>
+        </div>
+    </div>
+</body>
+</html>
